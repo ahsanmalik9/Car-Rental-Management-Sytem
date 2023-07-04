@@ -1,0 +1,356 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+
+	cout<<""<<endl;
+	cout<<""<<endl;
+	cout << "" << endl;
+	cout << "" << endl;
+	cout << "" << endl;
+	cout << "                                               CAR RENTAL SYSTEM"<<endl;
+	cout << "" << endl;
+	cout << "                                             ----------------------"<<endl;
+	cout << "                                                     LOGIN"<<endl;
+	cout << "                                             ----------------------"<<endl;
+	string username="";
+	string password="";
+	bool loginSuccess= false;
+	
+	cout << "\n                                           Welcome! Please login below.\n\n";
+	
+		do 
+		{
+			cout << "\n                                             \t Username: ";
+			cin >> username;
+			
+			cout << "\n                                                 ";
+			cout << "\n                                             \t Password: ";
+			
+			cin >> password;
+			cout << "\n                                                 ";
+				
+			
+			if (username=="1234" && password=="1234")
+				{
+				  cout<<"\n                                 \t\t Successful Login\n";
+				  loginSuccess=true;
+				}
+			else
+				{
+				cout << "\n Incorrect username or password ";
+				cout << "\n Please try to login again.";
+				}	
+		} 
+		while (!loginSuccess);
+	
+	string custname;
+	char carmodel;
+	int carnumber;
+    int days=0,rentalfee=1;
+    system("Pause");
+	system("CLS");
+
+    cout << "\n\n\n\n\t\t\t\t Please provide customer Name: ";
+    cin >> custname;
+    cout << endl;
+	
+	system("CLS");
+	
+		do
+			{ 
+    		cout << "\n\t\t\t\t Please provide Car Model Description"<<endl;
+    		cout << "\t\t\t\t Enter A for Suv."<<endl;
+    		cout << "\t\t\t\t Enter B for Sedan."<<endl;
+    		cout << "\t\t\t\t Enter C for Hatch Back."<<endl;
+    		cout << endl;
+    	
+			cout << "\t\t\t\t Car Model Description: ";
+   	    	cin >> carmodel;
+    		cout << endl;
+    
+	   	 	system("CLS");
+    
+    		if(carmodel !='A' && carmodel !='B' &&  carmodel !='C' )
+				{
+				 cout << "Invaild Car Model Description. Please Re-enter!" << endl;
+				}	
+   	}
+	
+	while(carmodel !='A' && carmodel !='B' &&  carmodel !='C' );
+    	if(carmodel =='A')
+    	{
+			do
+    			{
+				cout << "\n\t\t\t\t Please provide Car Number Description" << endl;
+   				cout << "\t\t\t\t Enter 1 for Toyota Prado." << endl;
+    			cout << "\t\t\t\t Enter 2 for Toyota Land Cruiser." << endl;
+    			cout << "\t\t\t\t Enter 3 for Honda BR-V." << endl;
+				cout << "\t\t\t\t Enter 4 for Toyota Fortuner." << endl;
+    			cout << "\t\t\t\t Enter 5 for Toyota Hilux." << endl;
+    			cout<<endl;
+    			
+				cout << "\t\t\t\t Car Number Description: ";
+				cin >> carnumber;
+				cout << endl;
+    			
+					if(carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5 )
+       				{
+					   cout << "Invaild Car Model Description. Please Re-enter!" << endl;
+					}
+   	 			}	
+    		
+			while(carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5 );
+    			
+				if(carnumber == 1)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Prado";
+				}
+    			
+				if(carnumber == 2)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Land Cruiser";
+				}
+    			
+				if(carnumber == 3)
+    			{
+					cout<<"\t\t\t\tYou have choose Honda BR-V";
+				}
+    			
+				if(carnumber == 4)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Fortuner";
+				}
+    			
+				if(carnumber == 5)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Hilus";
+				}
+		}
+
+		system("CLS");
+
+		if(carmodel == 'B')
+    	{
+			do
+    		{
+    			cout << "\n\t\t\t\tPlease provide Car Model Description"<<endl;
+   				cout<<"\t\t\t\tEnter 1 for Toyota Corolla."<<endl;
+    			cout<<"\t\t\t\tEnter 2 for Honda Civic."<<endl;
+    			cout<<"\t\t\t\tEnter 3 for Suzuki Ciaz."<<endl;
+    			cout<<"\t\t\t\tEnter 4 for Audi A8."<<endl;
+    			cout<<"\t\t\t\tEnter 5 for Honda City."<<endl;
+    			
+    			cout<<endl;
+    			
+				cout<<"\t\t\t\tCar Number Description: ";
+				cin>>carnumber;
+				cout<<endl;
+    			
+				if( carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5 )
+       			cout<<"Invaild Car Model Description. Please Re-enter!"<<endl;
+   	 		}	
+    		
+			while(carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5 );
+    		
+			if(carnumber == 1)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Corolla";
+				}
+    		
+			if(carnumber == 2)
+    			{
+					cout<<"\t\t\t\tYou have choose Honda Civic";
+				}
+    		
+			if(carnumber == 3)
+    			{
+					cout<<"\t\t\t\tYou have choose Suzuki Ciaz";
+				}
+    		
+			if(carnumber == 4)
+    			{
+					cout<<"\t\t\t\tYou have choose Audi A8";
+				}
+    		
+			if(carnumber == 5)
+    			{
+					cout<<"\t\t\t\tYou have choose Honda City";
+				}
+		
+		}
+		
+		system("CLS");
+	
+		if(carmodel == 'C')
+   		{
+			do
+    		{
+				cout << "\n\t\t\t\tPlease provide Car Number Description"<<endl;
+   				cout<<"\t\t\t\tEnter 1 for Suzuki Mehran."<<endl;
+    			cout<<"\t\t\t\tEnter 2 for Suzuki Cultus."<<endl;
+    			cout<<"\t\t\t\tEnter 3 for Toyota Vitz."<<endl;
+    			cout<<"\t\t\t\tEnter 4 for Suzuki Alto."<<endl;
+    			cout<<"\t\t\t\tEnter 5 for Suzuki Wagon-R."<<endl;
+    			cout<<endl;
+    			
+				cout<<"\t\t\t\tCar Number Description: ";
+				cin>>carnumber;
+				cout<<endl;
+    			
+					if(carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5 )
+       					{
+						   cout<<"Invaild Car Number Description. Please Re-enter!"<<endl;
+						}
+   	 		}	
+    		
+			while(carnumber != 1 && carnumber != 2 &&  carnumber != 3 &&  carnumber != 4 &&  carnumber != 5);
+    		
+				if(carnumber == 1)
+    			{
+					cout<<"\t\t\t\tYou have choose Suzuki Mehran";
+				}
+    		
+			if(carnumber == 2)
+    			{
+					cout<<"\t\t\t\tYou have choose Suzuki Cultus";
+				}
+    		
+			if(carnumber == 3)
+    			{
+					cout<<"\t\t\t\tYou have choose Toyota Vitz";
+				}
+			
+			if(carnumber == 4)
+				{
+					cout<<"\t\t\t\tYou have choose Suzuki Alto";
+				}
+    		
+			if(carnumber == 5)
+    			{
+					cout<<"\t\t\t\tYou have choose Suzuki Wagon-R";
+				}
+		}	
+    
+	system("CLS");
+	
+	{
+		cout << "\n\t\t\t\tPlease provide following information: "<<endl;
+    	cout <<"\n\t\t\t\t---------------------------------------"<<endl;
+
+    	cout<<"\n\t\t\t\tNumber of Days You want the car for rent : ";
+    	cin >> days;
+    	cout<<endl;
+
+    	//Calculation Here
+    	
+		if(carmodel == 'A' && carnumber == 1) //Prado 
+    		{
+			rentalfee=days*5000;
+			cout<<"\t\t\t\trent per day = 5000";
+			}
+			
+	    if(carmodel == 'A' && carnumber == 2)//Land Cruiser  
+			{
+			rentalfee=days*8000;
+			cout<<"\t\t\t\trent per day = 8000";
+    		}
+    		
+    	if(carmodel == 'A' && carnumber == 3)//BR-V  
+    		{
+			rentalfee=days*4000;
+			cout<<"\t\t\t\trent per day = 4000";
+   			}
+   			
+    	if(carmodel == 'A' && carnumber == 4)//Fortuner  
+    		{
+			rentalfee=days*5500;
+			cout<<"\t\t\t\trent per day = 5500";
+   			}
+   			
+   		if(carmodel == 'A' && carnumber == 5)//Hilux  
+    		{
+			rentalfee=days*5200;
+			cout<<"\t\t\t\trent per day = 5200";
+    		}
+    
+		if(carmodel == 'B' && carnumber == 1)//Corolla  
+    		{
+			rentalfee=days*2500;
+			cout<<"\t\t\t\trent per day = 2500";
+    		}
+    		
+   		if(carmodel == 'B' && carnumber == 2)//Civic  
+			{
+			rentalfee=days*3000;
+			cout<<"\t\t\t\trent per day = 3000";
+    		}
+		
+		if(carmodel == 'B' && carnumber == 3)//Ciaz  
+    		{
+			rentalfee=days*2000;
+			cout<<"\t\t\t\trent per day = 2000";
+			}
+		
+		if(carmodel == 'B' && carnumber == 4)//Audi A8  
+    		{
+			rentalfee=days*5000;
+			cout<<"\t\t\t\trent per day = 5000";
+    		}
+  	    
+		  if(carmodel == 'B' && carnumber == 5)//City  
+    		{
+			rentalfee=days*2500;
+			cout<<"\t\t\t\trent per day = 2500";
+    		}
+    
+		if(carmodel == 'C' && carnumber == 1)//Mehran  
+    		{
+			rentalfee=days*1500;
+			cout<<"\t\t\t\trent per day = 1500";    
+			}
+    
+		if(carmodel == 'C' && carnumber == 2)//Cultus  
+    		{
+			rentalfee=days*2000;
+			cout<<"\t\t\t\trent per day = 2000";
+ 			}
+   	    
+		if(carmodel == 'C' && carnumber == 3)//Vitz 
+    		{
+			rentalfee=days*2500;
+			cout<<"\t\t\t\trent per day = 2500";
+			}
+	
+		if(carmodel == 'C' && carnumber == 4)//Alto 
+    		{
+			rentalfee=days*1700;
+			cout<<"\t\t\t\trent per day = 1700";
+			}
+		
+		if(carmodel == 'C' && carnumber == 5)//Wagon-R 
+    		{
+			rentalfee=days*1800;
+			cout<<"\t\t\t\trent per day = 1800";
+    		}
+	
+		cout<<endl;
+		system("pause");
+		//Clear the Screen :)
+    	system("CLS");
+		
+		cout << "\n\t\t\t\t--------------------------------------------------"<<endl;
+		cout << "\n\t\t\t\t\t\t Customers Reciept"<<endl;	
+    	cout << "\n\t\t\t\t--------------------------------------------------"<<endl;
+    	cout << "\n\t\t\t\tCustomer Name :                               "<<custname<<endl;
+    	cout << "\n\t\t\t\tCar Model :                                   "<<carmodel<<endl;
+    	cout << "\n\t\t\t\tCar number :                                  "<<carnumber<<endl;
+		cout << "\n\t\t\t\tNumber of days :                              "<<days<<endl;
+    	cout << "\n\t\t\t\tYour Rental Amount is :                       "<<rentalfee<<endl;
+    	cout << "\n\t\t\t\t--------------------------------------------------"<<endl;
+	}
+	return 0;
+}
